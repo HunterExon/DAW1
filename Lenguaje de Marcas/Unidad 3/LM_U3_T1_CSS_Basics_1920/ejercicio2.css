@@ -1,0 +1,25 @@
+table {
+    border: 1px solid black;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+thead {
+    background-color: royalblue;
+    color: navy;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    border: inherit;
+}
+
+tr td.titulillo {
+    padding-top: 20px;
+    color: darkred;
+    font-size: large;
+    letter-spacing: 5 px;
+}
+
+td{
+    padding-bottom: 10px;
+}

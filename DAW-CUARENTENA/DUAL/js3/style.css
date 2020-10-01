@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+body,h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gray;
+}
+.container {
+    width: 100%;
+}
+.validacion {
+    align-items: center;
+    background-color: #ccc;
+    border: 2px solid silver;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+}
+.validacion>p {
+    text-align: center;
+    width: 100%;
+}
+.user-block {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+}
+.pass-block {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+}
+.validacion>input {
+    width: 30%;
+}
+#user-req,#user-length,#pass-req,#pass-length {
+    color: rgb(204, 23, 23);
+    display: none;
+}
+#succes {
+    color: green;
+    display: none;
+}

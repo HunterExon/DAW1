@@ -1,0 +1,120 @@
+/*=============PARA PRUEBAS=============*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.container{
+  border: 2px solid green;
+}
+header{
+  border: 2px solid red;
+}
+main{
+  border: 2px solid blue;
+}
+footer{
+  border: 2px solid orange;
+}
+/*=============PARA PRUEBAS=============*/
+/*=============DISPOSICIÓN=============*/
+.container {
+  display: grid;
+  grid-template-columns: 10% 30% 30% 30%;
+  grid-template-rows: 100px 400px 300px 100px ;
+  margin: 20px auto;
+  width: 90%;
+  height: 850px;
+  row-gap: 2%;
+}
+header {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+main {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+article.art1 {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+article.art2 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+article.art3 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+article.art4 {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
+footer {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+/*=============DISPOSICIÓN=============*/
+/*=============REGLAS BASICAS=============*/
+main img{
+  width: 80%;
+  height: 250px;
+}
+div.social img{
+  width: 10px;
+  height: 10px;
+}
+img{
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+}
+h2{
+  margin: 0% 2%;
+}
+header{
+  align-items: center;
+}
+header, main, article{
+  text-align: center;
+  display: flex;
+}
+header h1, h4{
+  margin: auto auto;
+  text-align: center;
+}
+div.letras{
+  margin: auto auto;
+}
+nav{
+  margin: 0% auto;
+  padding: 2%;
+}
+nav div{
+  margin-top: 15%;
+}
+main, article{
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+main{
+  margin: 0% 5%;
+}
+div.contenido, article.art1 div.contenido{
+  margin: 10px 0%;
+}
+article.art1 div.contenido{
+  width: 100%;
+}
+article.art1{
+  margin: 0% 0%;
+}
+article{
+  margin-left: 10%;
+}
+/*=============REGLAS BASICAS=============*/

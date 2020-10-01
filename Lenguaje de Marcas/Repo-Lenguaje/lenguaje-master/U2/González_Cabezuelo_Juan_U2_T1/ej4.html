@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            margin: 0 auto;
+            width: 500px;
+            padding: 1em;
+            border: 2px solid blue;
+            box-shadow: 6px 6px 0px black;
+        }
+        button{
+            margin: 15px;
+            width: 150px;
+        }
+        legend{
+            color: blue ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="POST" action="#">
+        <p>
+            <h1>Reservation Request</h1>
+        </p>
+        <fieldset>
+            <table>
+                <tbody>
+                    <legend>General Information</legend>
+                    <tr>
+                        <td>
+                            <label for="Arrival Date">Arrival Date </label>
+                        </td>
+                        <td>
+                            <input value="12/39/2016" type="date" name="Arrival Date" placeholder="Arrival Date" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Nights">Nights: </label>
+                        </td>
+                        <td>
+                            <input value="3" type="number" name="Nigths" placeholder="Nights" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Adults">Adults: </label>
+                        </td>
+                        <td>
+                            <select name="Adults">
+                                <option value="0">0</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Children">Chilren: </label>
+                        </td>
+                        <td>
+                            <select name="Children">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <tbody>
+                    <legend>Preferences</legend>
+                    <tr>
+                        <td>Room type: </td>
+                        <td>
+                            <input type="radio" name="Room type" checked>Standard
+                            <input type="radio" name="Room type">Business
+                            <input type="radio" name="Room type">Suite
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bed type: </td>
+                        <td>
+                            <input type="radio" name="Bed type" checked>King
+                            <input type="radio" name="Bed type">Double Double
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Smoking">Smoking
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table>
+                <tbody>
+                    <legend>Contact Information</legend>
+                    <tr>
+                        <td>
+                            <label for="Name">Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email: </label>
+                        </td>
+                        <td>
+
+                            <input type="email" name="Email" value="grace@yahoo.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Phone">Phone: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="Phone" required size="10" value="1234567890">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <button name="Submit Reservation" type="submit">Submit Reservation</button>
+        <button name="Clear" type="clear">Clear</button>
+    </form>
+</body>
+
+</html>

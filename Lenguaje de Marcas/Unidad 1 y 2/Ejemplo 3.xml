@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cine nombre="Cinco Cines" direccion="Calle ejemplo numero inventado">
+	<peliculas>
+		<pelicula nombre="pelicula 1">
+			<sesiones>
+				<sesion1 hora="1" />
+				<sesion2 hora="2" />
+				<sesion3 hora="3" />
+			</sesiones>
+		</pelicula>
+		<pelicula nombre="pelicula 2">
+			<sesiones>
+				<sesion1 hora="4" />
+				<sesion2 hora="5" />
+				<sesion3 hora="6" />
+			</sesiones>
+		</pelicula>
+	</peliculas>
+</cine>

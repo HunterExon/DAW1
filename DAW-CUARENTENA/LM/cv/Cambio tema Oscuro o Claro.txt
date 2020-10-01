@@ -1,0 +1,1 @@
+Existe un "botón" en la parte superior del CV donde al pulsar cambia entre ambos temas.

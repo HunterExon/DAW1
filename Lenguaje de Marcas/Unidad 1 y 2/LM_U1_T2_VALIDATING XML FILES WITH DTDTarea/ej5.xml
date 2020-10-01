@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE football-game SYSTEM 'ej5.dtd'>
+<football-game>
+    <game id="a">
+        <local name="b">
+            <goals>
+                <goal>
+                    <player>c</player>
+                    <time>d</time>
+                </goal>
+                <goal>
+                    <player>e</player>
+                    <time>f</time>
+                </goal>
+                <penaltie>
+                    <player>g</player>
+                    <time>h</time>
+                </penaltie>
+            </goals>
+        </local>
+        <visitant name="i">
+            <goals>
+                <goal>
+                    <player>j</player>
+                    <time>k</time>
+                </goal>
+            </goals>
+        </visitant>
+        <cards>
+                <yellow>
+                    <player-card team="z" time-card="9">dfg</player>
+                    <player-card team="z" time-card="7">trg</player>
+                </yellow>
+                <red>
+                    <player-card team="h" time-card="3">erty</player>
+                </red>
+        </cards>
+    </game>
+    <game id="l">
+        <local name="m">
+        
+        </local>
+        <visitant name="n">                
+            <penaltie>
+                <player>o</player>
+                <time>p</time>
+            </penaltie>
+        </visitant>
+        <cards>
+                <red>
+                    <player team="g" time-card="8">kjlh</player>
+                    <player team="r" time-card="7">tggb</player>
+                </red>
+        </cards>
+    </game>
+</football-game>

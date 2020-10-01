@@ -1,0 +1,20 @@
+
+<!ELEMENT football-game (game+) >
+<!ELEMENT game (local,visitant,cards?) >
+<!ATTLIST game id ID #REQUIRED>
+<!ELEMENT local (goals?)>
+        <!ATTLIST local name #CDATA #REQUIRED>
+        <!ELEMENT goals (goal*, penaltie*)>
+            <!ELEMENT goal (player, time)>
+                <!ELEMENT player (#PCDATA)>
+                <!ELEMENT time (#PCDATA)>
+            <!ELEMENT penaltie (player, time)>
+    <!ELEMENT visitant (goals?)>
+        <!ATTLIST visitant name #CDATA #REQUIRED>
+
+    <!ELEMENT cards (yellow?,red?)>
+        <!ELEMENT yellow (player-card+)>
+            <!ELEMENT player-card (#PCDATA)>
+                <!ATTLIST player-card team #CDATA #REQUIRED>
+                <!ATTLIST player-card time-card #CDATA #REQUIRED>
+        <!ELEMENT red (player-card+)>

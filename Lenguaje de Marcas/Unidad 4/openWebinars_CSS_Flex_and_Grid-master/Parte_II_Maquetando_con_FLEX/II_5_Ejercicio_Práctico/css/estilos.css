@@ -1,0 +1,68 @@
+/*=============PARA PRUEBAS=============*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.container{
+  border: 2px solid green;
+}
+header{
+  border: 2px solid red;
+}
+.content_wrapper{
+  border: 2px solid blue;
+}
+.articles{
+  border: 2px solid hotpink;
+}
+footer{
+  border: 2px solid orange;
+}
+/*=============PARA PRUEBAS=============*/
+
+img{
+  width: 50%;
+  height: 50%;
+}
+
+.container{
+  width:90%;
+  margin: 0% auto;
+}
+
+header, .content_wrapper, .articles, footer{
+margin: 1% 1%;
+}
+
+header h1, header h4{
+  text-align: center;
+  margin: 0% 0%;
+}
+
+.content_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.articles{
+  display: flex;
+  justify-content: flex-end;
+}
+.articles article{
+  margin-left: 2%;
+}
+
+nav{
+  width: 15%;
+}
+
+main, article{
+  width: 30%;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

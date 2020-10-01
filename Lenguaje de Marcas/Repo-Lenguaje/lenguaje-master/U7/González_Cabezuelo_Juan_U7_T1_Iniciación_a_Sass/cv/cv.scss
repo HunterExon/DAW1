@@ -1,0 +1,136 @@
+//Colores
+$color-fondo-header: #61a788;
+$color-fondo-main: #70d375;
+$color-letra0:#354e4e;
+$color-letra1: #486b6b;
+$color-letra2: #1b2929;
+
+//Bordes
+$border-color: $color-letra2;
+$border-style: solid;
+$border-width: 2px;
+$border-radius: 2em;
+
+//Tamaños
+$main-container-width: 60%;
+
+
+
+//CODIGO DE AQUÍ PARA ABAJO
+
+//Para Todo
+* {
+    box-sizing: border-box;
+    color: $color-letra0;
+    font-size: medium;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    list-style: none;
+    text-align: center;
+}
+
+//Fondo body
+body{
+    background-image: url("../img/body.jpg");
+}
+
+//Letra indice
+h2{
+    color: $color-letra2;
+    text-decoration: underline;
+}
+
+//Letra normal
+span{
+    color: $color-letra1;
+    font-weight: bold;
+}
+
+//Listas
+ul{
+    padding: 0%;
+}
+
+//Contenedor
+.container {
+    margin: auto auto;
+    border-radius: $border-radius;
+    width: $main-container-width;
+}
+
+//Cabecera
+header{
+    width: 100%;
+    margin: auto auto;
+    background-color: $color-fondo-header;
+
+    //Nombre propio
+    h1{
+        font-size: x-large;
+    }
+    img{
+        width: 50%;
+        border-radius: 3*$border-radius;
+    }
+}
+
+//Bordes
+main, header{
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    padding: 1em;
+}
+
+//Parte 2
+main{
+    background-color: $color-fondo-main;
+}
+
+
+@media screen and (max-width: 572px) { 
+    * {
+        font-size: small;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 792px) { 
+    * {
+        text-align: left;
+    }
+}
+
+//Segunda forma en responsive
+@media screen and (min-width: 1154px) {
+    //Para todo
+    * {
+        font-size: large;
+        text-align: left;
+    }
+
+    //header
+    header{
+        //Foto Perfil
+        img{
+            width: 35%;
+            float: right;
+        }
+
+        //Lista cabecera
+        ul{
+            float: left;
+        }
+
+        //Nombre Propio
+        h1{
+            font-size: xx-large;
+            clear: both;
+        }
+    }
+
+    //Parte 2
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

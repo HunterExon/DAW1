@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc30e1f7-2930-4962-803b-1992a744c176" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="U7 Tarea 1 - List+Set" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XygxZj8jBW6L7GpK8RIfgevFDg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.Union_Interseccion">
+    <configuration name="Union_Interseccion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juan.Union_Interseccion" />
+      <module name="U7 Tarea 1 - List+Set" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="act5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juan.act5" />
+      <module name="U7 Tarea 1 - List+Set" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="act6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juan.act6" />
+      <module name="U7 Tarea 1 - List+Set" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="act7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juan.act7" />
+      <module name="U7 Tarea 1 - List+Set" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="act8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juan.act8" />
+      <module name="U7 Tarea 1 - List+Set" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Union_Interseccion" />
+      <item itemvalue="Application.act5" />
+      <item itemvalue="Application.act6" />
+      <item itemvalue="Application.act7" />
+      <item itemvalue="Application.act8" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Union_Interseccion" />
+        <item itemvalue="Application.act8" />
+        <item itemvalue="Application.act7" />
+        <item itemvalue="Application.act6" />
+        <item itemvalue="Application.act5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc30e1f7-2930-4962-803b-1992a744c176" name="Default Changelist" comment="" />
+      <created>1582023995771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582023995771</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1322" height="493" key="GridCell.Tab.0.bottom" timestamp="1582286487241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="493" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582286487241" />
+    <state width="1322" height="493" key="GridCell.Tab.0.center" timestamp="1582286487241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="493" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582286487241" />
+    <state width="1322" height="493" key="GridCell.Tab.0.left" timestamp="1582286487241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="493" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582286487241" />
+    <state width="1322" height="493" key="GridCell.Tab.0.right" timestamp="1582286487241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="493" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582286487241" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1582286270399">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582286270399" />
+    <state x="0" y="0" key="new project wizard" timestamp="1582286486711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1582286486711" />
+  </component>
+</project>

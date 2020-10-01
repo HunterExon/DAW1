@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+}
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 20%;
+}
+.container div input{
+    height: 4rem;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 23%;
+}
+#operacion{
+    text-align: end;
+    width: 74%;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div>
+                <h2>termino 1:</h2>
+                <input id="termino1" type="text">
+            </div>
+            <div>
+                <h2>termino 2:</h2>
+                <input id="termino2" type="text">
+            </div>
+            <p>Resultado: </p>
+            <span id="resultado"></span>
+        </div>
+        <div class="Botones">
+            <input type="button" value="Suma" onclick="suma();" id="btnSuma">
+            <input type="button" value="Resta" onclick="resta();" id="btnResta">
+            <input type="button" value="Multiplicación" onclick="multi();" id="btnMulti">
+            <input type="button" value="División" onclick="div();" id="btnDiv">
+        </div>
+    </div>
+    <script src="utils.js"></script>
+</body>
+</html>

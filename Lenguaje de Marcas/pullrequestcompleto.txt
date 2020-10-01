@@ -1,0 +1,10 @@
+1-git branch Gonzalez_Cabezuelo_Juan
+2-git checkout Gonzalez_Cabezuelo_Juan
+3-mkdir GonzalezCabezueloJuan
+4-cd GonzalezCabezueloJuan
+5-notepad readmi.md
+6-git add .
+7-git status
+8-git commit -m "PruebaBranch_JGC"
+9-git push --set-upstream origin Gonzalez_Cabezuelo_Juan
+(irse a github y terminar ahí con el pull request)

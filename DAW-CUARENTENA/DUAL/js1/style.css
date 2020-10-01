@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.display p{
+    display: inline-block;
+}
+.display div{
+    align-items: center;
+    display: flex;
+    height: 30px;
+}
+.display div input{
+    margin-left: 10px;
+}
+

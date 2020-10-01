@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <form method="POST" action="#">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align: center; background-color:aqua;">IES Alixar Login</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="usuario">Usuario: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="usuario" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password: </label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+                        </td>
+                        <td>
+                            <input type="date" name="fecha_nacimiento" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="curso">Curso de Matriculación </label>
+                        </td>
+                        <td>
+                            <select id="curso">
+                                <option value='Primero DAW1' selected>Primero DAW1</option>
+                                <option value='Segundo DAW1'>Segundo DAW1</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            <label for="role">Role: </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="role" checked>Estudiante
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="role">Profesor
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="role">Apoyo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="role">Staff
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">
+                            <label for="forma">Forma de Comunicación: </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="forma">Mail
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="forma">Teléfono
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="forma" checked>Correo ordinario
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">
+                            <button name="submit" type="submit">Enviar</button>
+                        </td>
+                        <td style="text-align: left;">
+                            <button name="reset" type="reset">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

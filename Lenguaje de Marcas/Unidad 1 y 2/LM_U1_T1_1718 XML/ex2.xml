@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ordenador nombre="PcCom Custom GT" precio="4675,64€">
+    <hardware>
+        <motherboard precio="460,99€" fabricante="Asus" chipset="Intel® Z390 Chipset">Asus Rog Maximus XI Formula</motherboard>
+        <cpu precio="489,90€" fabricante="Intel" socket="LGA 1151" velocidad_base="3.6 GHz">Intel Core i9-9900K</cpu>
+        <gpu precio="1399€" fabricante="Gigabyte" memoria="11GB">Gigabyte AORUS GeForce RTX 2080 Ti Xtreme Waterforce WB 11GB GDDR6</gpu>
+        <ram precio="281,79€" fabricante="G.Skill" memoria="32GB" velocidad_base="3600 MHz">G.Skill Trident Z Neo DDR4 3600</ram>
+        <psu precio="129,99€" fabricante="Corsair" potencia="750W" conector="ATX 1">Corsair RMx White Series RM750x 750W 80 Plus Gold Full Modular</psu>
+        <hd>
+            <hd1 precio="214 ,90€" fabricante="Samsung" tipo="SSD NVMe" memoria="2 TB">Samsung 970 EVO Plus 1TB SSD NVMe M.2</hd1>
+            <hd2 precio="103,90€" fabricante="Seagate" tipo="HDD" memoria="4 TB">Seagate BarraCuda 3.5" 4TB SATA3</hd2>
+        </hd>
+        <refrigeracion precio="526,59€" fabricante="EKWB" tipo="Liquida">EKWB EK-KIT P360 Kit + Tubo 5/8" 16mm</refrigeracion>
+        <torre precio="269€" fabricante="Thermaltake" formato="ATX">Thermaltake Level 20 GT RGB Plus edition USB 3.0 Cristal Templado</torre>
+    </hardware>
+</ordenador>

@@ -1,0 +1,30 @@
+.rojo{
+    background-color: red;
+}
+.amarillo{
+    background-color: yellow;
+}
+.verde{
+    background-color: green;
+}
+.gris{
+    background-color: gray;
+}
+.azul{
+    background-color: blue;
+}
+.naranja{
+    background-color: orange;
+}
+.morado{
+    background-color: purple;
+}
+.rosa{
+    background-color: pink;
+}
+.row>div{
+    height: 300px;
+}
+.row>div>div>div{
+    height: 100px;
+}

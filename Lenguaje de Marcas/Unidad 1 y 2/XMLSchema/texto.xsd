@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="texto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="capitulo" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="parrafo" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="numeracion" type="xs:unsignedInt" default="1"/>
+                        <xs:attribute name="titulo" type="xs:string" default="unTitulo"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="apendice" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                                <xs:element name="parrafo" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="numeracion" type="xs:string" default="a"/>
+                        <xs:attribute name="titulo" type="xs:string" default="unTitulo"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="titulo" type="xs:string" default="unDocumento"/>
+            <xs:attribute name="fechaCreacion" type="xs:date" default="1970-01-01"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

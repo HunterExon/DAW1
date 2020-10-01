@@ -1,0 +1,15 @@
+@for $hsize from $inicio through $fin {
+    h#{$hsize} {
+        font-size: #{$hsize/2}em;
+        padding-left: 15px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@while $num<8 {
+    tr:nth-child(#{$num}) {
+        background-color: nth($lista-color, $num);
+    }
+    $num: $num + 1;
+}

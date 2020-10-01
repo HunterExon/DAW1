@@ -1,0 +1,236 @@
+//Colores
+$color-fondo-header: #61a788;
+$color-fondo-main: #70d375;
+$color-fondo-tabla: #43a148;
+$color-fondo-dark: #0c1b0c;
+$color-tabla: #9fa143;
+$color-letra0:#354e4e;
+$color-letra1: #486b6b;
+$color-letra2: #1b2929;
+$color-letra-dark: #cee0e0;
+
+//Bordes
+$border-color: $color-letra2;
+$border-style: solid;
+$border-width: 2px;
+$border-radius: 2em;
+
+//Tamaños
+$main-container-width: 60%;
+
+//CODIGO DE AQUÍ PARA ABAJO
+
+//Para Todo
+* {
+    box-sizing: border-box;
+    color: $color-letra0;
+    font-size: medium;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    list-style: none;
+    text-align: center;
+}
+
+//Fondo body
+body {
+    background-image: url("../../img/body.jpg");
+}
+
+//Letra indice
+h2 {
+    color: $color-letra2;
+    text-decoration: underline;
+}
+
+//Letra normal
+span {
+    color: $color-letra1;
+    font-weight: bold;
+}
+
+//Listas
+ul {
+    padding: 0%;
+}
+
+//Contenedor
+.container {
+    margin: auto auto;
+    border-radius: $border-radius;
+    width: $main-container-width;
+}
+
+//Cabecera
+header {
+    width: 100%;
+    margin: auto auto;
+    background-color: $color-fondo-header;
+
+    //Nombre propio
+    h1 {
+        font-size: x-large;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 3*$border-radius;
+    }
+}
+
+//Bordes
+main,
+header,
+section.modulos,
+div.tabla_modulos {
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    padding: 1em;
+}
+
+//Tabla
+section.modulos {
+    width: 100%;
+    margin: auto auto;
+    background-color: $color-fondo-tabla;
+
+    table {
+        width: 70%;
+        margin: auto auto;
+
+        tr th {
+            text-align: center;
+            ;
+        }
+
+        tr td:nth-child(1) {
+            text-align: left;
+            ;
+        }
+
+        tr td:nth-child(2) {
+            text-align: right;
+        }
+    }
+
+}
+
+//Parte 2
+main {
+    background-color: $color-fondo-main;
+}
+
+@media screen and (max-width: 576px) {
+    * {
+        font-size: small;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    * {
+        text-align: left;
+    }
+}
+
+//Segunda forma en responsive
+@media screen and (min-width: 1154px) {
+
+    //Para todo
+    * {
+        font-size: large;
+        text-align: left;
+    }
+
+    //header
+    header {
+
+        //Foto Perfil
+        img {
+            width: calcularAnchura(1);
+            ;
+            float: right;
+        }
+
+        //Lista cabecera
+        ul {
+            float: left;
+        }
+
+        //Nombre Propio
+        h1 {
+            font-size: xx-large;
+            clear: both;
+        }
+    }
+
+    //Parte 2
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//FUNCIÓN CALCULAR ANCHURA
+
+@function calcAnchura($numero) {
+    @return $numero * 35%;
+}
+
+$dark: false;
+
+@if $dark {
+    * {
+        color: $color-letra0;
+    }
+
+    body {
+        background-image: url("../../img/body-dark.jpg");
+    }
+
+    h2 {
+        color: $color-letra-dark;
+    }
+
+    span {
+        color: $color-letra-dark;
+    }
+
+    header {
+        background-color: $color-fondo-dark;
+    }
+
+    main {
+        background-color: $color-fondo-dark;
+    }
+}
+
+$colores: green,
+red,
+yellow,
+grey,
+orange;
+
+@for $i from 1 through 5 {
+    table tr:nth-child(#{$i}) {
+        background-color: nth($colores, $i);
+    }
+}
+
+$hx:6;
+$tamanios:60px,
+50px,
+40px,
+30px,
+20px;
+$num : 1;
+
+@while $num < $hx {
+    h#{$num} {
+        font-size: nth($tamanios, $num);
+    }
+
+    $num:$num+1;
+}

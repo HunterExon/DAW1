@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<etiqueta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="etiqueta.xsd">
+    <numero>123456</numero>
+    <calle>...</calle>
+    <ciudad>...</ciudad>
+    <codigoPostal>01234</codigoPostal>
+</etiqueta>

@@ -1,0 +1,47 @@
+body, nav, content, footer{
+    width: 100%;
+    float: left;
+    clear: left;
+}
+header, .profesores{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color: #005682;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+img{
+    height: 50px;
+}
+header span{
+    color: white;
+    width: 16px;
+    margin-left: 10px;
+}
+navElement{
+    background-color: #f0f0f0;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+}
+navElement a{
+    color: black;
+    text-decoration: none;
+}
+navElement:hover{
+    background-color: #005682;
+}
+navElement a:hover{
+    color: white;
+}
+.visited{
+    background-color: #005682;
+}
+footer{
+    background-color: darkgrey;
+}
+footer span{
+    color: grey;
+}

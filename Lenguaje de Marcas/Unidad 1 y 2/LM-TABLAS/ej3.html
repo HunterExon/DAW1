@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+            table {
+                border-collapse: collapse;
+            }
+            th,td {
+                text-align: center;
+                border: 2px solid black;
+                background-color: grey;
+            }
+            td.hueco{
+                background-color: brown;
+            }
+            tr.recreo *{
+                border-collapse: collapse;
+                background-color: yellow;
+            }
+            tr.horas *{
+                background-color: coral;
+            } 
+            *.horas{
+                background-color: greenyellow;
+            }           
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>HORARIO DE CLASE CURSO 2019-2020</caption>
+        <thead>
+            <tr class="horas">
+                <th class="horas">HORAS</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="horas">8:15-9:15</td>
+                <td class="hueco"></td>
+                <td>Lenguaje</td>
+                <td rowspan="3">Programación</td>
+                <td rowspan="2">Entornos</td>
+                <td class="hueco"></td>
+            </tr>
+            <tr>
+                <td class="horas">9:15-10:15</td>
+                <td rowspan="2">Base de Datos</td>
+                <td class="hueco"></td>
+                <td>Base de Datos</td>
+            </tr>
+            <tr>
+                <td class="horas">10:15-11:15</td>
+                <td>Programación</td>
+                <td class="hueco"></td>
+                <td>Lenguaje</td>
+            </tr>
+            <tr class="recreo">
+                <td class="noborder">11:15-11:45</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td class="horas">11:45-12:45</td>
+                <td>Base de Datos</td>
+                <td rowspan="2">Programación</td>
+                <td>Lenguaje</td>
+                <td rowspan="3" class="hueco"></td>
+                <td>Lenguaje</td>
+            </tr>
+            <tr>
+                <td class="horas">12:45-13:45</td>
+                <td rowspan="2" class="hueco"></td>
+                <td rowspan="2">Base de Datos</td>
+                <td rowspan="2">Programación</td>
+            </tr>
+            <tr>
+                <td class="horas">13:45-14:45</td>
+                <td>Entornos</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

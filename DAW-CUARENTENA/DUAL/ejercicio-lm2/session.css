@@ -1,0 +1,44 @@
+.borderRadius {
+    /* TODO BORDE REDONDEADO CON UN RADIO DE 30px */
+    border-radius: 30px;
+}
+ 
+.borderShadow {
+    /* TODO SOMBRA DE BORDE */
+    -webkit-box-shadow: 5px 5px 6px 0px rgba(136, 136, 136, 1);
+    -moz-box-shadow: 5px 5px 6px 0px rgba(136, 136, 136, 1);
+    box-shadow: 5px 5px 6px 0px rgba(136, 136, 136, 1);
+}
+ 
+.textShadow {
+    /* TODO SOMBRA DE TEXTO */
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(158, 158, 158, 1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(158, 158, 158, 1);
+    box-shadow: 2px 2px 2px 0px rgba(158, 158, 158, 1);
+}
+ 
+.multiColumn {
+    /* TODO INDICAR NÚMERO DE COLUMNAS Y ESPACIO ENTRE COLUMNAS */
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+}
+ 
+#boxTransition {
+    /* TODO INDICAR TRANSICIÓN SOBRE LA PROPIEDAD margin-left */
+    -webkit-transition: margin-left 3s ease-in-out;
+    -moz-transition: margin-left 3s ease-in-out;
+    -o-transition: margin-left 3s ease-in-out;
+    transition: margin-left 3s ease-in-out;
+}
+ 
+#boxTransition.transitionLeft {
+    margin-left: 0;
+}
+ 
+#boxTransition.transitionRight {
+    margin-left: 500px;
+}

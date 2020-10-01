@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: indianred;
+}
+.container {
+    margin: auto auto;
+    width: 90%;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.container > *{
+    height: 200px;
+}
+header{
+    text-align: center;
+    color: indigo;
+}
+.red, .blue, .green{
+    float: left;
+    width: 30%;
+}
+@media screen and (min-width: 576px){
+    .red, .blue{
+        float: left;
+        width: 50%;
+    }
+    .green{
+        clear: left;
+        width: 100%;
+    }
+    header{
+        background-color: greenyellow;
+    }
+}
+@media screen and (min-width: 937px){
+    header{
+        background-color: orange;
+    }
+    .red, .green{
+        float: left;
+        width: 50%;
+    }
+    .blue{
+        clear: left;
+        width: 100%;
+    }
+}
+
+

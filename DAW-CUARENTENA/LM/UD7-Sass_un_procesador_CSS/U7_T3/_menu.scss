@@ -1,0 +1,19 @@
+nav {
+    display: inline-flex;
+    background-color: $cuerpoOscuro;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        width: 25%;
+        &:hover {
+            background-color: $cabeceraOscuro;
+        }
+    }
+}
+

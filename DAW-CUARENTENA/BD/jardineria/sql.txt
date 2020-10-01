@@ -1,0 +1,146 @@
+1-  select ciudad, codigopostal from oficinas where pais like 'España';
+2-  select nombre, apellido1, apellido2, puesto from empleados where puesto like 'Director General';
+3-  select nombre, puesto from empleados where puesto not like 'Director Oficina';
+4-  select count(*) as total from empleados;
+5-  select count(*) as NORTEAMERICANOS from clientes where pais like 'USA';
+6-  select pais, count(*) TOTALCLIENTES from clientes group by pais;
+7-  Select c.nombrecliente cliente, e.nombre empleado from
+    clientes c inner join empleados e on c.codigoempleadorepventas=e.codigoempleado 
+    where e.puesto like 'Representante Ventas';
+8-  Select c.nombrecliente from clientes c 
+    inner join pagos p on c.codigocliente=p.codigocliente 
+    where EXTRACT(YEAR FROM fechapago)=2007 group by c.nombrecliente;
+9-  Select estado from pedidos group by estado;
+10- Select p.codigopedido, c.nombrecliente, p.fechaentrega, p.fechapedido 
+    from pedidos p inner join clientes c 
+    on p.codigocliente = c.codigocliente where p.estado like 'Pendiente';
+11- select p.codigoproducto, p.nombre, p.gama 
+    from productos p, GAMASPRODUCTOS g 
+    where p.gama=g.gama 
+    and not exists 
+    (select CODIGOPRODUCTO from detallepedidos 
+    where codigoproducto=p.CODIGOPRODUCTO);
+12- Select nombre, apellido1, apellido2 from empleados e 
+    inner join oficinas o on e.codigooficina=o.codigooficina 
+    where o.region like 'Barcelona';
+13- SELECT pd.CODIGOPRODUCTO, COUNT(p.CODIGOPEDIDO) 
+    FROM productos pd INNER JOIN detallepedidos dp 
+    ON pd.CODIGOPRODUCTO=dp.CODIGOPRODUCTO
+    INNER JOIN pedidos p ON dp.CODIGOPEDIDO=p.CODIGOPEDIDO 
+    GROUP BY pd.CODIGOPRODUCTO;
+14- SELECT c.nombrecliente FROM clientes c 
+    INNER JOIN pedidos p ON c.CODIGOCLIENTE=p.CODIGOCLIENTE 
+    WHERE c.CIUDAD LIKE 'Miami'
+    GROUP BY c.NOMBRECLIENTE;
+15- select p.codigopedido, sum(dp.cantidad*dp.PRECIOUNIDAD) as PRECIOFINAL
+    from pedidos p, detallepedidos dp
+    where p.codigopedido = dp.codigopedido
+    group by p.codigopedido;
+16- select nombrecliente, sum(p.cantidad) as total 
+    from clientes c, pagos p
+    where c.codigocliente=p.codigocliente
+    group by c.nombrecliente;
+17- SELECT gp.gama, COUNT(*) FROM gamasproductos gp 
+    INNER JOIN productos p ON gp.GAMA=p.GAMA GROUP BY gp.gama;
+18- select distinct pe.codigopedido from pedidos pe, detallepedidos dp
+    where pe.codigopedido = dp.codigopedido and dp.codigoproducto 
+    in 
+    (select codigoproducto from productos 
+    where precioventa = (select max(precioventa)
+    from productos p, gamasproductos g
+    where p.gama = g.gama
+    and lower(g.gama) like 'aromáticas'));
+19- select pe.codigopedido from pedidos pe, detallepedidos dp
+    where pe.codigopedido = dp.codigopedido group by pe.codigopedido
+    having count(*)>=6;
+20- select pe.codigopedido from pedidos pe where
+    (select sum(dp.cantidad * dp.PRECIOUNIDAD) as TOTAL
+    from 
+    pedidos p, detallepedidos dp
+    where p.codigopedido = dp.codigopedido and pe.codigopedido = p.codigopedido
+    group by p.codigopedido) > (select avg(t.total)
+    from 
+    (select p.codigopedido, sum(dp.cantidad * dp.PRECIOUNIDAD) as TOTAL
+    from 
+    pedidos p, detallepedidos dp
+    where p.codigopedido = dp.codigopedido group by p.codigopedido) t);
+21- 
+22- create or replace PROCEDURE nombre_cliente
+    (v_codigocliente clientes.codigocliente%type)
+    AS
+    v_nombre VARCHAR(45);
+    BEGIN
+    SELECT nombrecliente INTO v_nombre 
+    FROM clientes WHERE codigocliente = v_codigocliente;
+    DBMS_OUTPUT.PUT_LINE('NOMBRE: ' || v_nombre);
+    END;
+25- create or replace FUNCTION Pagos_cliente(v_codigocliente clientes.codigocliente%type)
+    RETURN NUMBER
+    AS
+    v_sumapagos pagos.cantidad%type := 0;
+    BEGIN
+    SELECT SUM(cantidad) INTO v_sumapagos
+    FROM pagos
+    WHERE codigocliente = v_codigocliente;
+    RETURN v_sumapagos;
+    END;
+26- create or replace function euros_pedido
+    (v_codigopedido pedidos.codigopedido%type, v_limite number)
+    return number
+    as
+    v_total number(8) := 0;
+    limite_superado exception;
+    begin
+    select sum(dp.cantidad * dp.PRECIOUNIDAD) into v_total
+    from pedidos p, detallepedidos dp
+    where p.codigopedido = dp.codigopedido and p.codigopedido = v_codigopedido;
+    end;
+27- create or replace PROCEDURE nombre_cliente(v_codigocliente clientes.codigocliente%type)
+    AS
+    v_nombre VARCHAR(45);
+    BEGIN SELECT nombrecliente INTO v_nombre 
+    FROM clientes WHERE codigocliente = v_codigocliente;
+    DBMS_OUTPUT.PUT_LINE('NOMBRE: ' || v_nombre);
+    EXCEPTION
+    WHEN no_data_found THEN
+    DBMS_OUTPUT.PUT_LINE('EL CLIENTE NO EXISTE');
+    END;
+28- create or replace FUNCTION pagos_totales(v_codigocliente clientes.codigocliente%type)
+    RETURN NUMBER
+    AS
+    v_sumapagos pagos.cantidad%type := 0;
+    BEGIN
+    SELECT SUM(cantidad) INTO v_sumapagos
+    FROM pagos
+    WHERE codigocliente = v_codigocliente;
+    RETURN v_sumapagos;
+    EXCEPTION
+    WHEN no_data_found THEN
+    RETURN -1;
+    END;
+29- create or replace function total_pedido_func
+    (v_codigopedido pedidos.codigopedido%type, v_limite number)
+    return number
+    as
+    v_total number(8) := 0;
+    limite_superado exception;
+    begin
+    select sum(dp.cantidad * dp.PRECIOUNIDAD) into v_total
+    from pedidos p, detallepedidos dp
+    where p.codigopedido = dp.codigopedido and p.codigopedido = v_codigopedido;
+    if v_total is null then
+    raise no_data_found;
+    else
+    if v_limite < v_total then
+    raise limite_superado;
+    else
+    return v_total;
+    end if;
+    end if;
+    exception
+    when no_data_found then
+    return -1;
+    when limite_superado then
+    DBMS_OUTPUT.PUT_LINE('Limite superado');
+    return 0;
+    end;

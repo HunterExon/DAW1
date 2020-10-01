@@ -1,0 +1,33 @@
+1.	Lista alfabética de productos .(B)
+SELECT ProductName FROM products ORDER BY ProductName ASC
+
+2.	Productos más caros que la media de productos.(B)
+SELECT ProductName, UnitPrice FROM products WHERE UnitPrice > (SELECT AVG(UnitPrice) AS Media FROM products)
+
+3.	Subtotales de pedidos: Para cada pedido, calcula un subtotal para cada pedido (identificado por OrderID). 
+SELECT O.orders, SUM(P.UnitPrice*OD.quantity) AS Total
+FROM 'order details' AS OD
+INNER JOIN orders AS O
+ON OD.OrderID=P.OrderID
+INNER JOIN products P
+ON OD.productID=P.ProductID
+GROUP BY O.OrderID
+
+4.	Ventas por año
+SELECT COUNT(OrderID), YEAR(OrderDate) FROM Orders GROUP BY Year(OrderDate)
+
+5. Ventas de empleados por país. Para cada empleado, obtenga la cantidad de sus ventas, desglosado por nombre de país. 
+SELECT E1.FirstName, E1.country, COUNT(E2.OrderID) AS Cantidad_productos 
+FROM employees as E1 
+INNER JOIN orders as E2 
+ON E1.EmployeeID=E2.EmployeeID 
+Group BY FirstName,Country
+
+6.	Detalles de los pedidos ampliados. Esta consulta calcula el importe de venta de cada pedido después de aplicar el descuento.
+7.	 Ventas por categoría. Para cada categoría, obtenemos la lista de productos vendidos y el monto total de ventas. 
+8.	Diez productos más caros 
+Select ProductName, UnitPrice
+ FROM products 
+ORDER BY UnitPrice DESC LIMIT 10
+
+

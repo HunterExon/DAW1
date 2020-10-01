@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ordenadores>
+    <ordenador mac="154308">
+        <ram>16</ram>
+        <micro>i7 8700k</micro>
+        <grafica>GTX 1060 6gb</grafica>
+    </ordenador>
+    <ordenador mac="658497">
+        <ram>32</ram>
+        <micro>i9 9900</micro>
+        <grafica>RTX 2080Ti</grafica>
+    </ordenador>
+    <ordenador mac="326578">
+        <ram>12</ram>
+        <micro>Ryzen 7 20700x</micro>
+        <grafica>GTX 1080</grafica>
+    </ordenador>
+    <ordenador mac="154686">
+        <ram>8</ram>
+        <micro>Ryzen 5 2600x</micro>
+        <grafica>GTX 1660</grafica>
+    </ordenador>
+    <ordenador mac="698431">
+        <ram>4</ram>
+        <micro>i3 3200</micro>
+        <grafica>GTX 1050</grafica>
+    </ordenador>
+</ordenadores>

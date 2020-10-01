@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE stock SYSTEM 'ej4.dtd'>
+<stock>
+    <new-car>
+        <model>a</model>
+        <price>2</price>
+    </new-car>
+    <new-car>
+        <model>c</model>
+        <price>3</price>
+    </new-car>
+    <used-car>
+        <model>d</model>
+        <price>4</price>
+        <mileage>asd</mileage>
+        <condition>qwer</condition>
+    </used-car>
+    <used-car>
+        <model>g</model>
+        <price>7</price>
+        <mileage>asdew</mileage>
+    </used-car>
+</stock>

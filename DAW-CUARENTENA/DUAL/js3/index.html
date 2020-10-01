@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="validacion">
+            <div class="user-block">
+                <p>User: </p>
+                <input id="user" type="text">
+                <p id="user-req">|==USER NECESITA UN CAMPO==|</p>
+                <p id="user-length">|==MINIMO DE 3 CARACTERES==|</p>
+            </div>
+            <div class="pass-block">
+                <p>Pass: </p>
+                <input id="pass" type="password">
+                <p id="pass-req">|==PASS NECESITA UN CAMPO==|</p>
+                <p id="pass-length">|==MINIMO DE 3 CARACTERES==|</p>
+            </div>
+            <input type="button" value="Entrar" onclick="validar();">
+            <p id="succes">SUCCES!</p>
+        </div>
+    </div>
+    <script src="utils.js"></script>
+</body>
+
+</html>

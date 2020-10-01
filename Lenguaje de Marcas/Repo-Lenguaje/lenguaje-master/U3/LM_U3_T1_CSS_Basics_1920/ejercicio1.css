@@ -1,0 +1,19 @@
+tr:nth-child(even){
+background-color: aquamarine;
+}
+tr:nth-child(odd){
+    background-color: chartreuse;
+}
+td{
+    border-bottom: 2px solid crimson;
+}
+
+tr:hover{
+    background-color: darkolivegreen;
+    color: darkred;
+}
+
+thead tr th{
+    background-color: black;
+    color: white;
+}

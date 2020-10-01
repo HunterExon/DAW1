@@ -1,0 +1,28 @@
+body{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    color: grey;
+    background-color: grey;
+}
+
+h1,
+h2,
+strong,
+em,
+ul li ul li,
+tbody tr td:last-child,
+input,
+a:visited {
+    color: red;
+}
+td.location, label, fieldset{
+    color: blue;
+}
+
+label {
+    margin-left: 2px;
+}

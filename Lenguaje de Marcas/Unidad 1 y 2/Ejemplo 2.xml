@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso>
+    <asignaturas>
+        <asignatura>
+            <nombre>LM</nombre>
+            <horas>6</horas>
+        </asignatura>
+        <asignatura>
+            <nombre>BD</nombre>
+            <horas>8</horas>      
+        </asignatura>    
+    </asignaturas>
+    <tutor>
+        Juan Diego
+    </tutor>
+    <aula>
+        DAW1
+    </aula>
+</curso>

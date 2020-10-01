@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cateneMontuose SYSTEM 'cateneMontuose.dtd'>
+<cateneMontuose>
+    <catenaMontuosa>
+        <monte>
+            <nome>b</nome>
+            <regione>a</regione>
+            <altezza unitaMisura="ddd">r</altezza>
+        </monte>
+    </catenaMontuosa>
+    <catenaMontuosa>
+        <monte>
+            <nome>y</nome>
+            <regione>x</regione>
+            <altezza unitaMisura="xxx">z</altezza>
+        </monte>
+        <monte>
+            <nome>h</nome>
+        </monte>
+    </catenaMontuosa>
+</cateneMontuose>

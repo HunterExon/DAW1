@@ -1,0 +1,30 @@
+body {
+    @if $theme == true {
+        background-color: $fondoClaro;
+    } @else {
+        background-color: $fondoOscuro;
+    }
+}
+
+.cabecera {
+    @if $theme == true {
+        background-color: $cabeceraClaro;
+    } @else {
+        background-color: $cabeceraOscuro;
+    }
+}
+
+.container {
+    @if $theme == true {
+        background-color: $cuerpoClaro;
+    } @else {
+        background-color: $cuerpoOscuro;
+        color: $letras;
+    }
+}
+
+a:visited {
+    @if $theme == false {
+        color: #c51f5d;
+    }
+}

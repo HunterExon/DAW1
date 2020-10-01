@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="operacion" type="text">
+            <input type="button" value="C" onclick="limpiar();" id="btnC">      
+        </div>
+        <div>        
+            <input type="button" value="7" onclick="setValue('7');" id="btn7">
+            <input type="button" value="8" onclick="setValue('8');" id="btn8">
+            <input type="button" value="9" onclick="setValue('9');" id="btn9">
+            <input type="button" value="/" onclick="setValue('/');" id="btnDiv">
+            <input type="button" value="4" onclick="setValue('4');" id="btn4">
+            <input type="button" value="5" onclick="setValue('5');" id="btn5">
+            <input type="button" value="6" onclick="setValue('6');" id="btn6">
+            <input type="button" value="*" onclick="setValue('*');" id="btnMulti">
+            <input type="button" value="1" onclick="setValue('1');" id="btn1">
+            <input type="button" value="2" onclick="setValue('2');" id="btn2">
+            <input type="button" value="3" onclick="setValue('3');" id="btn3">
+            <input type="button" value="-" onclick="setValue('-');" id="btnResta">
+            <input type="button" value="0" onclick="setValue('0');" id="btn0">
+            <input type="button" value="." onclick="setValue('.');" id="btnPunto">
+            <input type="button" value="=" onclick="calcular();" id="btnIgual">
+            <input type="button" value="+" onclick="setValue('+');" id="btnSuma">
+        </div>
+    </div>
+    <script src="utils.js"></script>
+</body>
+</html>

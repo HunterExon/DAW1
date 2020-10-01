@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ordenadores>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <ordenador mac="784697">
+        <ram>12</ram>
+        <micro>Ryzen 7 2700x</micro>
+        <grafica>GTX 980</grafica>
+    </ordenador>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <ordenador mac="658497">
+
+        <ram>32</ram>
+
+        <micro>i9 9900</micro>
+
+        <grafica>RTX 2080Ti</grafica>
+
+    </ordenador>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <ordenador mac="326578">
+
+        <ram>12</ram>
+
+        <micro>Ryzen 7 20700x</micro>
+
+        <grafica>GTX 1080</grafica>
+
+    </ordenador>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <ordenador mac="154686">
+
+        <ram>8</ram>
+
+        <micro>Ryzen 5 2600x</micro>
+
+        <grafica>GTX 1660</grafica>
+
+    </ordenador>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <ordenador mac="698431">
+
+        <ram>4</ram>
+
+        <micro>i3 3200</micro>
+
+        <grafica>GTX 1050</grafica>
+
+    </ordenador>
+    
+    <ordenador mac="654788">
+        <ram>16</ram>
+        <micro>i3 2500</micro>
+        <grafica>GTX 840M</grafica>
+    </ordenador>
+</ordenadores>

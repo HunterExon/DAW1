@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="receta.xsd">
+    <titulo>...</titulo>
+    <ingredientes>
+        <ingrediente>...</ingrediente>
+        <!-- Hay un número indeterminado
+              de elementos "ingrediente",
+              pero al menos uno -->
+    </ingredientes>
+    <procedimiento></procedimiento>
+        <!-- Hay un número indeterminado
+           de elementos "procedimiento" -->
+</receta>
+

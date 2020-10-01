@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<curso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curso.xsd">
+    <nombre>1ºDAW</nombre>
+    <asignaturas>
+        <cod>012</cod>
+        <titulo>Programación</titulo>
+        <profesor>
+            <nss>7894651</nss>
+            <nombre>Pepe</nombre>
+            <apellidos>
+                <ap1>Pere</ap1>
+                <ap2>Reverte</ap2>
+            </apellidos>
+        </profesor>
+    </asignaturas>
+    <asignaturas>
+        <cod>013</cod>
+        <titulo>Base de Datos</titulo>
+        <profesor>
+            <nss>45646584</nss>
+            <nombre>Raul</nombre>
+            <apellidos>
+                <ap1>Robert</ap1>
+                <ap2>Damian</ap2>
+            </apellidos>
+        </profesor>
+    </asignaturas>
+</curso>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<texto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texto.xsd" titulo="unDocumento" fechaCreacion="1970-01-01">
+    <capitulo numeracion="1" titulo="unTitulo">
+        <parrafo>...</parrafo>
+        <parrafo>...</parrafo>
+    </capitulo>
+    <apendice numeracion="a" titulo="unApendice">
+        <parrafo>...</parrafo>
+    </apendice>
+</texto>

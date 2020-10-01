@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cine nombre="Megaocio" direccion="Calle ejemplo numero inventado">
+	<peliculas>
+		<pelicula nombre="La princesa prometida" sala="7" director="Rob Reiner">
+			<sesiones>
+				<sesion hora="16:00" />
+				<sesion hora="18:00" />
+				<sesion hora="20:00" />
+			</sesiones>
+			<protagonista papel="Iñigo Montoya">Mandy Patinkin</protagonista>
+			<protagonista papel="Buttercup">Robin Wright</protagonista>
+			<resumen>El mozo de los cuentos se vuelve pirata y rescata a su amada, quien estaba a punto de casarse con un malvado príncipe.</resumen>
+		</pelicula>
+		<pelicula nombre="La naranja mecanica" sala="3" director="Stanley Kubrick">
+			<sesiones>
+				<sesion hora="12:00" />
+				<sesion hora="14:00" />
+				<sesion hora="16:00" />
+			</sesiones>
+			<protagonista papel="Alex DeLarge">Malcolm McDowell</protagonista>
+			<protagonista papel="Frank Alexander">Patrick Magee</protagonista>
+			<resumen>Un criminal en la Inglaterra del futuro pasa una serie de procesos experimentales para corregir sus impulsos violentos.</resumen>
+		</pelicula>
+		<pelicula nombre="Capitán América: El primer vengador" sala="1" director="Joe Johnston">
+			<sesiones>
+				<sesion hora="13:00" />
+				<sesion hora="15:00" />
+				<sesion hora="17:00" />
+			</sesiones>
+			<protagonista papel="Capitán América">Chris Evans</protagonista>
+			<protagonista papel="Peggy Carter">Hayley Atwell</protagonista>
+			<resumen>Tras tres meses de someterse a un programa de entrenamiento físico y táctico, encomiendan a Steve Rogers su primera misión como Capitán América. Armado con un escudo indestructible, emprende la guerra contra la perversa organización HYDRA.</resumen>
+		</pelicula>
+		<pelicula nombre="Thor" sala="12" director="Kenneth Branagh">
+			<sesiones>
+				<sesion hora="18:00" />
+				<sesion hora="20:00" />
+				<sesion hora="22:00" />
+			</sesiones>
+			<protagonista papel="Thor">Chris Hemsworth</protagonista>
+			<protagonista papel="Jane Foster">Natalie Portman</protagonista>
+			<resumen>Tras desatar una antigua guerra, el codicioso guerrero Thor es desterrado a la Tierra por su padre para que viva entre los hombres y descubra así el verdadero sentido de la humildad. Allí, sin sus poderes, Thor deberá enfrentarse a las fuerzas más oscuras que su mayor enemigo le enviará desde Asgard.</resumen>
+		</pelicula>
+		<pelicula nombre="Spider-man: Lejos de casa" sala="9" director="Jon Watts">
+			<sesiones>
+				<sesion hora="16:00" />
+				<sesion hora="18:00" />
+				<sesion hora="20:00" />
+			</sesiones>
+			<protagonista papel="Spider-Man">Tom Holland</protagonista>
+			<protagonista papel="Michelle 'MJ' Jones">Zendaya</protagonista>
+			<resumen>Peter Parker decide pasar unas merecidas vacaciones en Europa junto a MJ, Ned y el resto de sus amigos. Sin embargo, Peter debe volver a ponerse el traje de Spider-Man cuando Nick Fury le encomienda una nueva misión: frenar el ataque de unas criaturas que están causando el caos en el continente.</resumen>
+		</pelicula>
+	</peliculas>
+</cine>
